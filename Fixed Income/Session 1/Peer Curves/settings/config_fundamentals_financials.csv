@@ -1,0 +1,9 @@
+field_name,field_label,bql_string
+Name,Name,bq.data.name()
+Market Cap (B),Market Cap (B),bq.data.cur_mkt_cap(currency='USD')['value']/1000000000
+Revenue (B),Revenue (B),bq.data.sales_rev_turn(currency='USD')['value']/1000000000
+Operating Income (B),Operating Income (B),bq.data.is_oper_inc(currency='USD')['value']/1000000000
+Asset to Equity,Asset to Equity,bq.data.asset_to_eqy()['value']
+Tier 1 Common Equity Ratio,Tier 1 Common Equity Ratio,bq.data.bs_tier1_com_equity_ratio()['value']
+Loan to Deposit Ratio,Loan to Deposit Ratio,bq.data.tot_loan_to_tot_dpst()['value']
+Deposits to Assets,Deposits to Assets,bq.data.deposits_to_assets()['value']

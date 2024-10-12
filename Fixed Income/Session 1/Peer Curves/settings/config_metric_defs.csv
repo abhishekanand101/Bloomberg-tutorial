@@ -1,0 +1,4 @@
+name,bql_string,bql_str_parametrized_date
+OAS,bq.data.spread(spread_type='oas')['value'],"bq.func.avg(bq.func.group(bq.data.spread(spread_type='oas',fill='prev',dates='{}')))"
+YTW,bq.data.yield_(yield_type='ytw')['value'],"bq.func.avg(bq.func.group(bq.data.yield_(yield_type='ytw',fill='prev',dates='{}')))"
+Z Spread,bq.data.spread(spread_type='Z')['value'],"bq.func.avg(bq.func.group(bq.data.spread(spread_type='Z',fill='prev',dates='{}')))"

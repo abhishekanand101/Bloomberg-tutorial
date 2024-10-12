@@ -1,0 +1,10 @@
+Field,BQL Code
+Name,bq.data.name()
+Market Cap (B),bq.data.cur_mkt_cap(currency='USD')['value']/1000000000
+S&P Rating,bq.data.rating(rating_source='SP')['value']
+Moody Rating,bq.data.rating(rating_source='MOODY')['value']
+BICS Level 1 Sector,"bq.data.classification_name('BICS','1')['value']"
+BICS Level 2 Industry Group,"bq.data.classification_name('BICS','2')['value']"
+GICS Sector,bq.data.gics_sector_name()['value']
+GICS Sub-Industry,bq.data.gics_sub_industry_name()['value']
+Country,bq.data.country_iso()['value']

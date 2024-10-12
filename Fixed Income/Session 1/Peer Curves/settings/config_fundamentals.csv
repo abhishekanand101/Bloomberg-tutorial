@@ -1,0 +1,8 @@
+field_name,field_label,bql_string
+Name,Name,bq.data.name()
+Market Cap (B),Market Cap (B),bq.data.cur_mkt_cap(currency='USD')['value']/1000000000
+Debt To EBITDA,Debt To EBITDA,bq.data.tot_debt_to_ebitda()['value']
+Sales (B),Sales (B),bq.data.sales_rev_turn(currency='USD')['value']/1000000000
+EBITDA (B),EBITDA (B),bq.data.ebitda(currency='USD')['value']/1000000000
+EBITDA Margin,EBITDA Margin,bq.data.ebitda_margin()['value']
+Free Cash Flow (B),Free Cash Flow (B),bq.data.cf_free_cash_flow(currency='USD')['value']/1000000000

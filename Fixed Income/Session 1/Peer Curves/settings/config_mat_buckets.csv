@@ -1,0 +1,9 @@
+label,low_limit,high_limit,interpolation_number
+<1yr,0,1,0.5
+2yr,1,2.5,2
+3yr,2.5,3.5,3
+5yr,3.5,6,5
+7yr,6,8.5,7
+10yr,8.5,15,10
+20yr,15,25,20
+30yr+,25,1000,30
